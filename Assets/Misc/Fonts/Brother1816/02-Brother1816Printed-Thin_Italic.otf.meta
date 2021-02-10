@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 1b53dc604e9fa4f2c844e15f1bd9630c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Brother 1816 Printed
+  fontNames:
+  - Brother 1816 Printed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 09aa48308e2cf4d17b844cebd30d8119, type: 3}
+  - {fileID: 12800000, guid: 383489d0a30024446b12e43872212402, type: 3}
+  - {fileID: 12800000, guid: a8305e51db2864c2fad46a3ce31f1ea2, type: 3}
+  - {fileID: 12800000, guid: 16e2edd1a05e44c459256bc0aa0ab47e, type: 3}
+  - {fileID: 12800000, guid: 06685d52cc23843dea39e378bbdba553, type: 3}
+  - {fileID: 12800000, guid: 278d93c6f583a48288599d9c09c768ed, type: 3}
+  - {fileID: 12800000, guid: 6812f4978802043fe8f45cb58788b375, type: 3}
+  - {fileID: 12800000, guid: 48160ca7b264f46068b54ec0575cf271, type: 3}
+  - {fileID: 12800000, guid: 2031fc797b8744cc3b33ff3029c1d343, type: 3}
+  - {fileID: 12800000, guid: 84b5de9908ace44838996af60fe28d1f, type: 3}
+  - {fileID: 12800000, guid: e263c88fd7f3b47e7a88c3060dc64fea, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

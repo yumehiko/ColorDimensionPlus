@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 06685d52cc23843dea39e378bbdba553
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Brother 1816 Printed
+  fontNames:
+  - Brother 1816 Printed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2031fc797b8744cc3b33ff3029c1d343, type: 3}
+  - {fileID: 12800000, guid: 84b5de9908ace44838996af60fe28d1f, type: 3}
+  - {fileID: 12800000, guid: e263c88fd7f3b47e7a88c3060dc64fea, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

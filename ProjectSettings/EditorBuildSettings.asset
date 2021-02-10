@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LoadScene.unity
+    guid: 4ce2219c2f88844c4bafa48f2c0a9a3a
+  - enabled: 1
+    path: Assets/Scenes/Stages/FirstStage.unity
+    guid: 966bada7db92444e79b6bdc577845be9
+  - enabled: 1
+    path: Assets/Scenes/Stages/BlueAndBlack.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Stages/Execution.unity
+    guid: 62383d2e0eb264fe5af07dc91daf8580
+  - enabled: 1
+    path: Assets/Scenes/Stages/SideGravity.unity
+    guid: 046c9b78d1d4a41149524011b517e081
+  - enabled: 1
+    path: Assets/Scenes/Stages/ThreeColors.unity
+    guid: f5605d35b41054f4da199b97a95f94b8
+  - enabled: 1
+    path: Assets/Scenes/Stages/Cube.unity
+    guid: 9b4e936f0b88d4b54bbc17d502c9c558
+  - enabled: 1
+    path: Assets/Scenes/Stages/Stairs.unity
+    guid: 9743db06430de43bcb73ef4aa1a78924
+  - enabled: 1
+    path: Assets/Scenes/Stages/ChangeDimension.unity
+    guid: d7eeba5578c984695832ba7a92946fdd
+  - enabled: 1
+    path: Assets/Scenes/Stages/Daybreak.unity
+    guid: a504f47fe3e5b4efcbe265d622b307f1
+  - enabled: 1
+    path: Assets/Scenes/Stages/Samsara.unity
+    guid: d31e62291ad2541a1895dfa9ddc728ae
+  - enabled: 1
+    path: Assets/Scenes/Stages/Labyrinth.unity
+    guid: e10d65c67a6db4b169b18ade78daa438
+  - enabled: 1
+    path: Assets/Scenes/Stages/FiveColor.unity
+    guid: fc784342c6f744aeb8a9e585535b748a
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 0fbe01ab6e34f41b9bc00a629237dcfb
+  m_configObjects: {}
