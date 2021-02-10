@@ -6,23 +6,19 @@ using UnityEngine.U2D;
 /// <summary>
 /// 命令を受けると色を変えるゾーン。
 /// </summary>
-public class SwapZone : MoveZone
+public class SwapZone : MonoBehaviour
 {
     private SpriteShapeRenderer spriteShapeRenderer = default;
     [SerializeField] private DimensionColor initColor = default;
     [SerializeField] private DimensionColor targetColor = default;
 
-    protected override void Initialize()
-    {
-        
-    }
 
-    public override void MoveWallOn()
+    public void MoveWallOn()
     {
         ChangeDimensionColor(targetColor);
     }
 
-    public override void MoveWallOff()
+    public void MoveWallOff()
     {
         ChangeDimensionColor(initColor);
     }

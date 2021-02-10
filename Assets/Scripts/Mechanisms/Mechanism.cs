@@ -8,7 +8,7 @@ using DG.Tweening;
 /// </summary>
 public class Mechanism : MonoBehaviour
 {
-    [SerializeField] private List<MoveZone> moveZones = default;
+    [SerializeField] private List<SwapZone> swapZones = default;
     //[SerializeField] private float duration = 1.0f;
 
     //Shake用
@@ -28,10 +28,10 @@ public class Mechanism : MonoBehaviour
     protected void PowerOn()
     {
         cameraShaker.ShakeCamera(shakeDuration);
-        for (int i = 0; i < moveZones.Count; i++)
+        for (int i = 0; i < swapZones.Count; i++)
         {
             //moveZones[i].duration = duration;
-            moveZones[i].MoveWallOn();
+            swapZones[i].MoveWallOn();
         }
     }
 
@@ -42,9 +42,9 @@ public class Mechanism : MonoBehaviour
     protected void PowerOff()
     {
         cameraShaker.ShakeCamera(shakeDuration);
-        for (int i = 0; i < moveZones.Count; i++)
+        for (int i = 0; i < swapZones.Count; i++)
         {
-            moveZones[i].MoveWallOff();
+            swapZones[i].MoveWallOff();
         }
     }
 }

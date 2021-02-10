@@ -269,6 +269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
         type: 3}
+      propertyPath: swapZones.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
+        type: 3}
       propertyPath: moveZones.Array.data[0]
       value: 
       objectReference: {fileID: 404041688}
@@ -280,6 +285,21 @@ PrefabInstance:
     - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
         type: 3}
       propertyPath: moveZones.Array.data[2]
+      value: 
+      objectReference: {fileID: 860701783}
+    - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
+        type: 3}
+      propertyPath: swapZones.Array.data[0]
+      value: 
+      objectReference: {fileID: 404041688}
+    - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
+        type: 3}
+      propertyPath: swapZones.Array.data[1]
+      value: 
+      objectReference: {fileID: 783457599}
+    - target: {fileID: 1325764758700218900, guid: 7078433d8904a4d9b916fc4f8df6d60e,
+        type: 3}
+      propertyPath: swapZones.Array.data[2]
       value: 
       objectReference: {fileID: 860701783}
     - target: {fileID: 1325764758700218901, guid: 7078433d8904a4d9b916fc4f8df6d60e,
@@ -696,7 +716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {x: 0, y: 0}
   initColor: 2
   targetColor: 3
 --- !u!1 &427199233
@@ -1088,7 +1107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {x: 0, y: 0}
   initColor: 2
   targetColor: 3
 --- !u!1 &860701782
@@ -1123,7 +1141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoint: {x: 0, y: 0}
   initColor: 2
   targetColor: 3
 --- !u!61 &860701784
