@@ -30,11 +30,11 @@ public class ColorSwitch : MonoBehaviour
     /// </summary>
     public static readonly Color[] DimensionPalette = new Color[5]
     {
-        Color.white,
-        new Color(0.8f,0.16f,0.2666669f),
-        new Color(0.1f,0.1f,0.1f),
-        new Color(0.1607843f,0.8f,0.693464f),
-        new Color(0.8f,0.5866667f,0.16f),
+        new Color(0.94f,0.94f,0.94f), //White
+        new Color(0.7490196f, 0.1333333f, 0.2392157f), //Red
+        new Color(0.12f,0.12f,0.12f), //Black
+        new Color(0.1333333f, 0.7490196f, 0.6431373f), // Blue
+        new Color(0.9490196f, 0.7607843f, 0.3803922f), //Yellow
     };
 
     /// <summary>

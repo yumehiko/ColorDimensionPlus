@@ -176,7 +176,6 @@ public class CharaControl : MonoBehaviour
     /// </summary>
     public void Brake()
     {
-        Debug.Log("Brakeds");
         InputHorizontal = 0.0f;
         InputVertical = 0.0f;
         myBody.velocity = Vector2.zero;

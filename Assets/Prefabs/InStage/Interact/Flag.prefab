@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0cb9ef673d6ba4bebb98294fd9643ff7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9607843, g: 0.7843137, b: 0.4313726, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 680332916326400204}
   - component: {fileID: 5949064374174552334}
   - component: {fileID: 1363889136625306377}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3bd6c41a2684e48bff1168273c6ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffect: {fileID: 0}
 --- !u!114 &1363889136625306377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da5694ef023e438dab56b039eaaae4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dimensionColor: 0
+  dimensionColor: 4
   changeLayerObjects:
   - {fileID: 7181287269826134873}
   changeSprites:

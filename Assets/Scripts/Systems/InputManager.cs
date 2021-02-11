@@ -46,12 +46,12 @@ public class InputManager : MonoBehaviour
             currentPlayerControl.Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(KeyCode.Q))
         {
             LosePlayerControl();
             currentPlayerControl = SwapControlPlayer(-1);
         }
-        else if(Input.GetKeyDown(KeyCode.Z))
+        else if(Input.GetKeyDown(KeyCode.E))
         {
             LosePlayerControl();
             currentPlayerControl = SwapControlPlayer(1);
