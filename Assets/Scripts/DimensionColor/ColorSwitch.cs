@@ -34,7 +34,7 @@ public class ColorSwitch : MonoBehaviour
         new Color(0.7490196f, 0.1333333f, 0.2392157f), //Red
         new Color(0.12f,0.12f,0.12f), //Black
         new Color(0.1333333f, 0.7490196f, 0.6431373f), // Blue
-        new Color(0.9490196f, 0.7607843f, 0.3803922f), //Yellow
+        new Color(0.9215686f, 0.7372549f, 0.3686275f), //Yellow
     };
 
     /// <summary>

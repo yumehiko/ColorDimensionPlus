@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 234252074}
   - component: {fileID: 234252073}
   - component: {fileID: 234252072}
+  - component: {fileID: 234252075}
   m_Layer: 10
   m_Name: Black (1)
   m_TagString: Untagged
@@ -205,7 +206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 11
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &234252072
 BoxCollider2D:
@@ -346,6 +347,20 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 0.25000003, y: 0.25000003, z: 0}
     m_Extent: {x: 0.25000003, y: 0.25000003, z: 0}
+--- !u!114 &234252075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234252070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 2
+  targetColor: 2
 --- !u!1001 &257767834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -663,16 +678,16 @@ Transform:
   m_Children:
   - {fileID: 1754277731}
   - {fileID: 1716488011}
-  - {fileID: 2147308676}
+  - {fileID: 234252071}
   - {fileID: 1421504375}
   - {fileID: 1426462409}
   - {fileID: 461638709}
   - {fileID: 1849346891}
+  - {fileID: 2147308676}
   - {fileID: 1301388847}
   - {fileID: 1235017049}
   - {fileID: 1153602557}
   - {fileID: 1732887129}
-  - {fileID: 234252071}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -688,6 +703,7 @@ GameObject:
   - component: {fileID: 461638712}
   - component: {fileID: 461638711}
   - component: {fileID: 461638710}
+  - component: {fileID: 461638713}
   m_Layer: 11
   m_Name: Blue (2)
   m_TagString: Untagged
@@ -841,13 +857,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.13333334, g: 0.7490196, b: 0.6431373, a: 1}
+  m_Color: {r: 0.1333333, g: 0.7490196, b: 0.6431373, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 1.0000001, y: 1.0000001, z: 0}
     m_Extent: {x: 1.0000001, y: 1.0000001, z: 0}
+--- !u!114 &461638713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461638708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 3
+  targetColor: 3
 --- !u!1001 &607417435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,17 +983,17 @@ PrefabInstance:
     - target: {fileID: 7005542863816994117, guid: 7078433d8904a4d9b916fc4f8df6d60e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3803922
+      value: 0.3686275
       objectReference: {fileID: 0}
     - target: {fileID: 7005542863816994117, guid: 7078433d8904a4d9b916fc4f8df6d60e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7607843
+      value: 0.7372549
       objectReference: {fileID: 0}
     - target: {fileID: 7005542863816994117, guid: 7078433d8904a4d9b916fc4f8df6d60e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9490196
+      value: 0.9215686
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7078433d8904a4d9b916fc4f8df6d60e, type: 3}
@@ -1236,17 +1266,17 @@ PrefabInstance:
     - target: {fileID: 4812064326140945999, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3803922
+      value: 0.3686275
       objectReference: {fileID: 0}
     - target: {fileID: 4812064326140945999, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7607843
+      value: 0.7372549
       objectReference: {fileID: 0}
     - target: {fileID: 4812064326140945999, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9490196
+      value: 0.9215686
       objectReference: {fileID: 0}
     - target: {fileID: 5047116523559706839, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
@@ -1326,17 +1356,17 @@ PrefabInstance:
     - target: {fileID: 6871325896229642692, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3803922
+      value: 0.3686275
       objectReference: {fileID: 0}
     - target: {fileID: 6871325896229642692, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7607843
+      value: 0.7372549
       objectReference: {fileID: 0}
     - target: {fileID: 6871325896229642692, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9490196
+      value: 0.9215686
       objectReference: {fileID: 0}
     - target: {fileID: 8644517650899449254, guid: 03bda1b0a781543ffb6b11a0a19a6099,
         type: 3}
@@ -1653,6 +1683,7 @@ GameObject:
   - component: {fileID: 1153602560}
   - component: {fileID: 1153602559}
   - component: {fileID: 1153602558}
+  - component: {fileID: 1153602561}
   m_Layer: 12
   m_Name: Yellow (3)
   m_TagString: Untagged
@@ -1672,7 +1703,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1153602558
 BoxCollider2D:
@@ -1806,13 +1837,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.9490196, g: 0.7607843, b: 0.38039216, a: 1}
+  m_Color: {r: 0.9215686, g: 0.7372549, b: 0.3686275, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.62500006, y: 1.0000001, z: 0}
     m_Extent: {x: 0.62500006, y: 1.0000001, z: 0}
+--- !u!114 &1153602561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153602556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 4
+  targetColor: 4
 --- !u!4 &1216667445 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1325764758700218901, guid: 7078433d8904a4d9b916fc4f8df6d60e,
@@ -1831,6 +1876,7 @@ GameObject:
   - component: {fileID: 1235017052}
   - component: {fileID: 1235017051}
   - component: {fileID: 1235017050}
+  - component: {fileID: 1235017053}
   m_Layer: 12
   m_Name: Yellow (2)
   m_TagString: Untagged
@@ -1850,7 +1896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1235017050
 BoxCollider2D:
@@ -1984,13 +2030,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.9490196, g: 0.7607843, b: 0.38039216, a: 1}
+  m_Color: {r: 0.9215686, g: 0.7372549, b: 0.3686275, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 1.0000001, y: 1.0000001, z: 0}
     m_Extent: {x: 1.0000001, y: 1.0000001, z: 0}
+--- !u!114 &1235017053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235017048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 4
+  targetColor: 4
 --- !u!1 &1301388846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2063,7 @@ GameObject:
   - component: {fileID: 1301388850}
   - component: {fileID: 1301388849}
   - component: {fileID: 1301388848}
+  - component: {fileID: 1301388851}
   m_Layer: 12
   m_Name: Yellow (1)
   m_TagString: Untagged
@@ -2022,7 +2083,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1301388848
 BoxCollider2D:
@@ -2156,13 +2217,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.9490196, g: 0.7607843, b: 0.38039216, a: 1}
+  m_Color: {r: 0.9215686, g: 0.7372549, b: 0.3686275, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.75000006, y: 1.0000001, z: 0}
     m_Extent: {x: 0.75000006, y: 1.0000001, z: 0}
+--- !u!114 &1301388851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301388846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 4
+  targetColor: 4
 --- !u!1001 &1395710429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2304,6 +2379,7 @@ GameObject:
   - component: {fileID: 1421504378}
   - component: {fileID: 1421504377}
   - component: {fileID: 1421504376}
+  - component: {fileID: 1421504379}
   m_Layer: 11
   m_Name: Blue
   m_TagString: Untagged
@@ -2457,13 +2533,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.13333334, g: 0.7490196, b: 0.6431373, a: 1}
+  m_Color: {r: 0.1333333, g: 0.7490196, b: 0.6431373, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.75000006, y: 1.0000001, z: 0}
     m_Extent: {x: 0.75000006, y: 1.0000001, z: 0}
+--- !u!114 &1421504379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421504374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 3
+  targetColor: 3
 --- !u!1 &1426462408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2566,7 @@ GameObject:
   - component: {fileID: 1426462412}
   - component: {fileID: 1426462411}
   - component: {fileID: 1426462410}
+  - component: {fileID: 1426462413}
   m_Layer: 11
   m_Name: Blue (1)
   m_TagString: Untagged
@@ -2629,13 +2720,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.13333334, g: 0.7490196, b: 0.6431373, a: 1}
+  m_Color: {r: 0.1333333, g: 0.7490196, b: 0.6431373, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.62500006, y: 1.0000001, z: 0}
     m_Extent: {x: 0.62500006, y: 1.0000001, z: 0}
+--- !u!114 &1426462413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426462408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 3
+  targetColor: 3
 --- !u!1001 &1592148657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2706,17 +2811,17 @@ PrefabInstance:
     - target: {fileID: 8757491602895517805, guid: 7ad49cf8894c243c9a66a97451dfd47c,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3803922
+      value: 0.3686275
       objectReference: {fileID: 0}
     - target: {fileID: 8757491602895517805, guid: 7ad49cf8894c243c9a66a97451dfd47c,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7607843
+      value: 0.7372549
       objectReference: {fileID: 0}
     - target: {fileID: 8757491602895517805, guid: 7ad49cf8894c243c9a66a97451dfd47c,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9490196
+      value: 0.9215686
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ad49cf8894c243c9a66a97451dfd47c, type: 3}
@@ -2740,7 +2845,7 @@ GameObject:
   - component: {fileID: 1716488013}
   - component: {fileID: 1716488012}
   m_Layer: 10
-  m_Name: SwapKtoB
+  m_Name: BlackToBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2925,6 +3030,7 @@ GameObject:
   - component: {fileID: 1732887132}
   - component: {fileID: 1732887131}
   - component: {fileID: 1732887130}
+  - component: {fileID: 1732887133}
   m_Layer: 12
   m_Name: Yellow (5)
   m_TagString: Untagged
@@ -2944,7 +3050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1732887130
 BoxCollider2D:
@@ -3078,13 +3184,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.9490196, g: 0.7607843, b: 0.38039216, a: 1}
+  m_Color: {r: 0.9215686, g: 0.7372549, b: 0.3686275, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.25000003, y: 0.50000006, z: 0}
     m_Extent: {x: 0.25000003, y: 0.50000006, z: 0}
+--- !u!114 &1732887133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732887128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 4
+  targetColor: 4
 --- !u!1 &1754277730
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,7 +3219,7 @@ GameObject:
   - component: {fileID: 1754277732}
   - component: {fileID: 1754277735}
   m_Layer: 10
-  m_Name: SwapKtoY
+  m_Name: BlackToYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3317,6 +3437,7 @@ GameObject:
   - component: {fileID: 1849346894}
   - component: {fileID: 1849346893}
   - component: {fileID: 1849346892}
+  - component: {fileID: 1849346895}
   m_Layer: 11
   m_Name: Blue (3)
   m_TagString: Untagged
@@ -3470,13 +3591,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.13333334, g: 0.7490196, b: 0.6431373, a: 1}
+  m_Color: {r: 0.1333333, g: 0.7490196, b: 0.6431373, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 0.62500006, y: 0.8750001, z: 0}
     m_Extent: {x: 0.62500006, y: 0.8750001, z: 0}
+--- !u!114 &1849346895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849346890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 3
+  targetColor: 3
 --- !u!1001 &1967419282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3771,6 +3906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8566449068779288480, guid: 9af68d1b3d7174525b16028705fb07a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566449068779288485, guid: 9af68d1b3d7174525b16028705fb07a1,
         type: 3}
       propertyPath: m_RootOrder
@@ -3847,7 +3987,7 @@ GameObject:
   - component: {fileID: 2147308678}
   - component: {fileID: 2147308677}
   m_Layer: 12
-  m_Name: SwapYtoK
+  m_Name: YellowToBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3865,7 +4005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427199234}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2147308677
 MonoBehaviour:
@@ -4013,7 +4153,7 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.9490196, g: 0.7607843, b: 0.3803922, a: 1}
+  m_Color: {r: 0.9215686, g: 0.7372549, b: 0.3686275, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []

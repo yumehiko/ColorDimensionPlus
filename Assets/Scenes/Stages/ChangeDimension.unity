@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 339953201}
   - component: {fileID: 339953200}
   - component: {fileID: 339953199}
+  - component: {fileID: 339953202}
   m_Layer: 9
   m_Name: ZoneRed
   m_TagString: Untagged
@@ -361,13 +362,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.7490196, g: 0.13333334, b: 0.23921569, a: 1}
+  m_Color: {r: 0.7490196, g: 0.1333333, b: 0.2392157, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 2.8750005, y: 0.67500013, z: 0}
     m_Extent: {x: 2.8750005, y: 0.67500013, z: 0}
+--- !u!114 &339953202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339953197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 1
+  targetColor: 1
 --- !u!1 &427199233
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +993,7 @@ GameObject:
   - component: {fileID: 1754277734}
   - component: {fileID: 1754277733}
   - component: {fileID: 1754277732}
+  - component: {fileID: 1754277735}
   m_Layer: 10
   m_Name: ZoneBlack
   m_TagString: Untagged
@@ -1138,6 +1154,20 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 2.8750005, y: 0.45000005, z: 0}
     m_Extent: {x: 2.8750005, y: 0.45000005, z: 0}
+--- !u!114 &1754277735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754277730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 2
+  targetColor: 2
 --- !u!1 &1822298339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1212,7 @@ GameObject:
   - component: {fileID: 1859155259}
   - component: {fileID: 1859155258}
   - component: {fileID: 1859155257}
+  - component: {fileID: 1859155260}
   m_Layer: 11
   m_Name: ZoneBlue
   m_TagString: Untagged
@@ -1335,13 +1366,27 @@ SpriteShapeRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Color: {r: 0.13333334, g: 0.7490196, b: 0.6431373, a: 1}
+  m_Color: {r: 0.1333333, g: 0.7490196, b: 0.6431373, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 30ac9f33983a04aa6b40be77a05ed2b5, type: 3}
   m_Sprites: []
   m_LocalAABB:
     m_Center: {x: 2.8750005, y: 0.67500013, z: 0}
     m_Extent: {x: 2.8750005, y: 0.67500013, z: 0}
+--- !u!114 &1859155260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859155255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f1adf5f886f4661b17e70673fa1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initColor: 3
+  targetColor: 3
 --- !u!1001 &1982456068
 PrefabInstance:
   m_ObjectHideFlags: 0
