@@ -155,20 +155,29 @@ public class CharaControl : MonoBehaviour
 
         Vector2 jumpDirection = Vector2.up;
 
-        if(localGravity.GravityDirection == LocalGravityDirection.Top)
+        if(localGravity.GravityDirection == LocalGravityDirection.Down)
+        {
+            jumpDirection = Vector2.up;
+            myBody.velocity = new Vector2(myBody.velocity.x, 0.0f);
+        }
+        else if(localGravity.GravityDirection == LocalGravityDirection.Top)
         {
             jumpDirection = Vector2.down;
+            myBody.velocity = new Vector2(myBody.velocity.x, 0.0f);
         }
         else if(localGravity.GravityDirection == LocalGravityDirection.Right)
         {
             jumpDirection = Vector2.left;
+            myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
         }
         else if(localGravity.GravityDirection == LocalGravityDirection.Left)
         {
             jumpDirection = Vector2.right;
+            myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
         }
 
         myBody.AddForce(jumpDirection * jumpForce, ForceMode2D.Impulse);
+        onGroundCheck.GetOffGround();
     }
 
     /// <summary>
