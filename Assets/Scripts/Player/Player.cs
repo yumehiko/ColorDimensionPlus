@@ -9,6 +9,7 @@ using Spine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer targetIcon = default;
+    [SerializeField] private Animator iconAnimator = default;
     [SerializeField] private SoundEffect soundEffect = default;
     [SerializeField] private ColorSwitch colorSwitch = default;
 
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     public CharaControl GetControl(bool playSound)
     {
         targetIcon.enabled = true;
+        iconAnimator.enabled = true;
+        iconAnimator.Play("Start");
         IsControlActive = true;
         if (playSound)
         {
@@ -37,6 +40,7 @@ public class Player : MonoBehaviour
     public void LoseControl()
     {
         targetIcon.enabled = false;
+        iconAnimator.enabled = false;
         IsControlActive = false;
     }
     

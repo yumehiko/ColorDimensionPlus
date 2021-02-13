@@ -29,7 +29,6 @@ public class DimensionChanger : MonoBehaviour
             return;
         }
 
-
         if (currentPlayer != null && currentPlayer.IsControlActive)
         {
             DimensionChange(currentPlayer);
