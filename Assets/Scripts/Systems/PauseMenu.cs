@@ -7,6 +7,7 @@ using UniRx;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager = default;
     [SerializeField] private Canvas pauseMenuCanvas = default;
 
     /// <summary>
@@ -30,6 +31,11 @@ public class PauseMenu : MonoBehaviour
     /// </summary>
     private void CheckPauseKeyInput()
     {
+        if(gameManager.isSceneSwapping)
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             if(pauseMenuCanvas.enabled == false)

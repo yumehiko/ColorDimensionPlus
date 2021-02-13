@@ -10,9 +10,11 @@ using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private ScreenFade screenFade = default;
+    public bool isSceneSwapping { get; private set; } = false;
 
     private void Start()
     {
+        Time.timeScale = 1.0f;
         screenFade.ScreenFadeIn(0.5f);
     }
 
@@ -37,7 +39,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LoadScene(int index)
     {
+        isSceneSwapping = true;
         screenFade.ScreenFadeOut(0.5f);
-        DOVirtual.DelayedCall(0.5f, () => SceneManager.LoadSceneAsync(index));
+        DOVirtual.DelayedCall(0.51f, () => SceneManager.LoadSceneAsync(index));
     }
 }
