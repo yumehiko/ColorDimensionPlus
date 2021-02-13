@@ -71,7 +71,6 @@ public class StageManager : MonoBehaviour
     /// </summary>
     public void SwitchActiveStageUI(bool doActive)
     {
-        Debug.Log("SwitchStageUI");
         if(doActive)
         {
             stageUICanvas.enabled = true;

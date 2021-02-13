@@ -11,17 +11,10 @@ public class FlagCounter : MonoBehaviour
     /// UIに表示するFlagのPrefab。
     /// </summary>
     [SerializeField] private GameObject flagPrefab = default;
-
-    [SerializeField] private Sprite fillImage = default;
-    [SerializeField] private Sprite deFillImage = default;
-
     [SerializeField] private SoundEffect soundEffect = default;
 
-    /// <summary>
-    /// UI上のフラグリスト。
-    /// </summary>
-    private List<Image> flagImages = new List<Image>();
-
+    private List<Animator> flagAnimators = new List<Animator>();
+    private readonly string aKeyIsGot = "isGot";
 
     /// <summary>
     /// 今掴んでいるFlagの数。
@@ -34,7 +27,7 @@ public class FlagCounter : MonoBehaviour
     public void AddNeedFlag()
     {
         GameObject instance = Instantiate(flagPrefab, transform);
-        flagImages.Add(instance.GetComponent<Image>());
+        flagAnimators.Add(instance.GetComponent<Animator>());
     }
 
     /// <summary>
@@ -42,7 +35,7 @@ public class FlagCounter : MonoBehaviour
     /// </summary>
     public void AddCatchFlag()
     {
-        FillFlagImage(flagImages[catchedFlags]);
+        flagAnimators[catchedFlags].SetBool(aKeyIsGot, true);
         soundEffect.PlaySound(catchedFlags, 1.0f);
         catchedFlags++;
         WinCheck();
@@ -54,23 +47,7 @@ public class FlagCounter : MonoBehaviour
     public void SubtractCatchFlag()
     {
         catchedFlags--;
-        DeFillFlagImage(flagImages[catchedFlags]);
-    }
-
-    /// <summary>
-    /// UIのFlagイメージを塗る。
-    /// </summary>
-    private void FillFlagImage(Image flagImage)
-    {
-        flagImage.sprite = fillImage;
-    }
-
-    /// <summary>
-    /// UIのFlagイメージの塗りを戻す。
-    /// </summary>
-    private void DeFillFlagImage(Image flagImage)
-    {
-        flagImage.sprite = deFillImage;
+        flagAnimators[catchedFlags].SetBool(aKeyIsGot, false);
     }
 
     /// <summary>
@@ -78,7 +55,7 @@ public class FlagCounter : MonoBehaviour
     /// </summary>
     private void WinCheck()
     {
-        if (catchedFlags >= flagImages.Count)
+        if (catchedFlags >= flagAnimators.Count)
         {
             stageManager.WinStage();
         }

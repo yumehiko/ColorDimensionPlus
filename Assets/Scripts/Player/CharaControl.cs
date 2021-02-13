@@ -176,6 +176,7 @@ public class CharaControl : MonoBehaviour
             myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
         }
 
+        animator.Play("Jump");
         myBody.AddForce(jumpDirection * jumpForce, ForceMode2D.Impulse);
         onGroundCheck.GetOffGround();
     }
