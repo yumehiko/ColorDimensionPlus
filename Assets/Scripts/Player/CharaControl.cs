@@ -32,7 +32,7 @@ public class CharaControl : MonoBehaviour
     /// <summary>
     /// ジャンプ力。
     /// </summary>
-    private float jumpForce = 2.0f;
+    private readonly float jumpForce = 2.0f;
 
     /// <summary>
     /// 左右入力値。
@@ -186,7 +186,8 @@ public class CharaControl : MonoBehaviour
     /// </summary>
     public void LoseInitiative()
     {
-        Brake();
+        InputHorizontal = 0.0f;
+        InputVertical = 0.0f;
         animator.SetFloat(aSpeedParamID, 0.0f);
         GetComponent<Player>().LoseControl();
     }
