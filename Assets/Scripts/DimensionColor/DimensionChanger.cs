@@ -24,12 +24,13 @@ public class DimensionChanger : MonoBehaviour
     /// </summary>
     private void CheckInteract()
     {
-        if(currentPlayer == null)
+        if (Input.GetKeyDown(KeyCode.F) == false)
         {
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+
+        if (currentPlayer != null && currentPlayer.IsControlActive)
         {
             DimensionChange(currentPlayer);
         }

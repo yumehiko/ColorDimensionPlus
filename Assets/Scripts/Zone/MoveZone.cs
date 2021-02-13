@@ -5,6 +5,7 @@ using DG.Tweening;
 
 /// <summary>
 /// 命令を受けると移動するゾーン。
+/// （不使用）
 /// </summary>
 public class MoveZone : MonoBehaviour
 {

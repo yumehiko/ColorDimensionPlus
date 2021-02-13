@@ -13,11 +13,17 @@ public class Player : MonoBehaviour
     [SerializeField] private ColorSwitch colorSwitch = default;
 
     /// <summary>
+    /// 現在操作対象になっているか。
+    /// </summary>
+    public bool IsControlActive { get; private set; } = false;
+
+    /// <summary>
     /// このキャラの操作を取得する。
     /// </summary>
     public CharaControl GetControl(bool playSound)
     {
         targetIcon.enabled = true;
+        IsControlActive = true;
         if (playSound)
         {
             soundEffect.PlaySoundRandomPitch(1.0f, 0.8f, 1.2f);
@@ -25,9 +31,13 @@ public class Player : MonoBehaviour
         return GetComponent<CharaControl>();
     }
 
+    /// <summary>
+    /// このキャラの操作を放棄。
+    /// </summary>
     public void LoseControl()
     {
         targetIcon.enabled = false;
+        IsControlActive = false;
     }
     
     /// <summary>
