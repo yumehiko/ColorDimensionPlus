@@ -24,10 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Stages/ThreeColors.unity
     guid: f5605d35b41054f4da199b97a95f94b8
   - enabled: 1
+    path: Assets/Scenes/Stages/CubeEasy.unity
+    guid: 1661edeaddea5477abf113e934f639cf
+  - enabled: 1
     path: Assets/Scenes/Stages/Stairs.unity
     guid: 9743db06430de43bcb73ef4aa1a78924
   - enabled: 1
-    path: Assets/Scenes/Stages/Cube.unity
+    path: Assets/Scenes/Stages/MoreCube.unity
     guid: 9b4e936f0b88d4b54bbc17d502c9c558
   - enabled: 1
     path: Assets/Scenes/Stages/ChangeDimension.unity
@@ -42,8 +45,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Stages/Labyrinth.unity
     guid: e10d65c67a6db4b169b18ade78daa438
   - enabled: 1
-    path: Assets/Scenes/Stages/FiveColor.unity
-    guid: fc784342c6f744aeb8a9e585535b748a
+    path: Assets/Scenes/Stages/FiveColorSmall.unity
+    guid: fd0b5f9a6f8f548cf8f37ae147c7bb85
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 0fbe01ab6e34f41b9bc00a629237dcfb
