@@ -476,6 +476,7 @@ MonoBehaviour:
   changeSprites:
   - {fileID: 4812064326140945999}
   - {fileID: 6871325896229642692}
+  layerOffset: 13
 --- !u!114 &564826987379231677
 MonoBehaviour:
   m_ObjectHideFlags: 0

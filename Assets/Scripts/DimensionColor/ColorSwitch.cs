@@ -25,6 +25,8 @@ public class ColorSwitch : MonoBehaviour
     [SerializeField] private List<GameObject> changeLayerObjects = default;
     [SerializeField] private List<SpriteRenderer> changeSprites = default;
 
+    [SerializeField] private int layerOffset = 8; 
+
     /// <summary>
     /// 次元色のパレット。DimensionColorのIndexでピックする。
     /// </summary>
@@ -46,7 +48,7 @@ public class ColorSwitch : MonoBehaviour
         Debug.Log("SetColor");
         for(int i = 0; i < changeLayerObjects.Count; i++)
         {
-            changeLayerObjects[i].layer = 8 + (int)dimensionColor;
+            changeLayerObjects[i].layer = layerOffset + (int)dimensionColor;
         }
 
         for(int i = 0; i < changeSprites.Count; i++)
