@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
+using System.Linq;
 
 /// <summary>
 /// 入力を受け付ける。
@@ -10,17 +11,30 @@ public class InputManager : MonoBehaviour
 {
 
     private CharaControl currentPlayerControl = default;
+
     private List<Player> players = new List<Player>();
+
     private int currentPlayerID = 0;
 
     private void Start()
     {
-        for(int i=0; i< transform.childCount; i++)
+        players = GetPlayers();
+        currentPlayerControl = players[0].GetControl(false);
+    }
+
+    /// <summary>
+    /// 子オブジェクトのプレイヤーをすべて取得。
+    /// </summary>
+    private List<Player> GetPlayers()
+    {
+        List<Player> newPlayerList = new List<Player>();
+
+        for (int i = 0; i < transform.childCount; i++)
         {
-            players.Add(transform.GetChild(i).GetComponent<Player>());
+            newPlayerList.Add(transform.GetChild(i).GetComponent<Player>());
         }
 
-        currentPlayerControl = players[0].GetControl(false);
+        return newPlayerList;
     }
 
     private void Update()
@@ -46,12 +60,26 @@ public class InputManager : MonoBehaviour
             currentPlayerControl.Jump();
         }
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        InputSwapKey();
+        
+    }
+
+    /// <summary>
+    /// スワップ（プレイヤーの操作対象を変更すること）の入力。
+    /// </summary>
+    private void InputSwapKey()
+    {
+        if(players.Count == 1)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             LosePlayerControl();
             currentPlayerControl = SwapControlPlayer(-1);
         }
-        else if(Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             LosePlayerControl();
             currentPlayerControl = SwapControlPlayer(1);
@@ -63,6 +91,10 @@ public class InputManager : MonoBehaviour
     /// </summary>
     private CharaControl SwapControlPlayer(int next)
     {
+        Player currentPlayer = players[currentPlayerID];
+        SortPlayersByX();
+        currentPlayerID = players.IndexOf(currentPlayer);
+
         currentPlayerID += next;
         if(currentPlayerID >= players.Count)
         {
@@ -72,7 +104,16 @@ public class InputManager : MonoBehaviour
         {
             currentPlayerID = players.Count - 1;
         }
+
         return players[currentPlayerID].GetControl(true);
+    }
+
+    /// <summary>
+    /// playerPositionXをx座標順にソート。
+    /// </summary>
+    private void SortPlayersByX()
+    {
+        players.Sort((a, b) => a.transform.position.x.CompareTo(b.transform.position.x));
     }
 
     /// <summary>
