@@ -368,8 +368,6 @@ MonoBehaviour:
   stageManager: {fileID: 3095868977425882055}
   flagPrefab: {fileID: 5825805346549952918, guid: 45724b1b198d34f1eac04b2cfea9b2fa,
     type: 3}
-  fillImage: {fileID: 21300000, guid: f3f30e1f0ba4e413ab51b2c2f0eb8417, type: 3}
-  deFillImage: {fileID: 21300000, guid: 4cb56011ea58f46a090d3f8bbd02355c, type: 3}
   soundEffect: {fileID: 5325381743960038157}
 --- !u!82 &1993809574915655302
 AudioSource:
@@ -485,6 +483,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8b6accd48fab84379b22aba1c6fa5247, type: 3}
   - {fileID: 8300000, guid: ac6d4b3ee07db4a5b9f768516cee69c4, type: 3}
   - {fileID: 8300000, guid: 4cb3b9ef720d14b81b28e1df5ef95437, type: 3}
+  - {fileID: 8300000, guid: 0ccf1d8ed9e8c46dd971dbf2f3879c72, type: 3}
 --- !u!1 &6584968975361905487
 GameObject:
   m_ObjectHideFlags: 0

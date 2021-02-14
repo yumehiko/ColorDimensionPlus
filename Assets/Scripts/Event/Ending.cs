@@ -10,7 +10,7 @@ using Cinemachine;
 public class Ending : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera vCamera = default;
-    [SerializeField] private Player player = default;
+//    [SerializeField] private Player player = default;
     [SerializeField] private CharaControl charaControl = default;
     [SerializeField] private InputManager inputManager = default;
     [SerializeField] private Animator animator = default;

@@ -16,6 +16,8 @@ public class FlagCounter : MonoBehaviour
     private List<Animator> flagAnimators = new List<Animator>();
     private readonly string aKeyIsGot = "isGot";
 
+    private bool isWon = false;
+
     /// <summary>
     /// 今掴んでいるFlagの数。
     /// </summary>
@@ -35,6 +37,11 @@ public class FlagCounter : MonoBehaviour
     /// </summary>
     public void AddCatchFlag()
     {
+        if (isWon)
+        {
+            return;
+        }
+
         flagAnimators[catchedFlags].SetBool(aKeyIsGot, true);
         soundEffect.PlaySound(catchedFlags, 1.0f);
         catchedFlags++;
@@ -46,6 +53,12 @@ public class FlagCounter : MonoBehaviour
     /// </summary>
     public void SubtractCatchFlag()
     {
+        if(isWon)
+        {
+            return;
+        }
+
+        soundEffect.PlaySound(3);
         catchedFlags--;
         flagAnimators[catchedFlags].SetBool(aKeyIsGot, false);
     }
@@ -57,6 +70,7 @@ public class FlagCounter : MonoBehaviour
     {
         if (catchedFlags >= flagAnimators.Count)
         {
+            isWon = true;
             stageManager.WinStage();
         }
     }

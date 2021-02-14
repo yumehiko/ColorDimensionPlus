@@ -45,7 +45,6 @@ public class ColorSwitch : MonoBehaviour
     [ContextMenu("SetDimensionColor")]
     public void ChangeDimensionColor()
     {
-        Debug.Log("SetColor");
         for(int i = 0; i < changeLayerObjects.Count; i++)
         {
             changeLayerObjects[i].layer = layerOffset + (int)dimensionColor;

@@ -1876,7 +1876,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852294f21b1764aaab95688c469d53ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: 1c3f03c72fdaa47f9b87ba4631ccc9cf, type: 3}
   targetMark: {fileID: 126208817878581449}
   targetColor: 1
   targetDirection: 0
+  soundEffect: {fileID: 126208817878581452}
+  music: {fileID: 8300000, guid: 1c3f03c72fdaa47f9b87ba4631ccc9cf, type: 3}
+--- !u!114 &126208817878581452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7512741063689197081, guid: 0d26b782f258346c99a87b9b787f6b7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 126208817878581448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126208817878581450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a133cedadfbf741679fe4c4a3c1c9ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,8 +11,9 @@ public class DimensionChanger : MonoBehaviour
     [SerializeField] private SpriteRenderer targetMark = default;
     [SerializeField] private DimensionColor targetColor = default;
     [SerializeField] private LocalGravityDirection targetDirection = default;
+    [SerializeField] private SoundEffect soundEffect = default;
 
-    private Player currentPlayer = null;
+    protected Player currentPlayer = null;
 
     private void Update()
     {
@@ -22,7 +23,7 @@ public class DimensionChanger : MonoBehaviour
     /// <summary>
     /// インタラクトチェック。
     /// </summary>
-    private void CheckInteract()
+    protected virtual void CheckInteract()
     {
         if (Input.GetKeyDown(KeyCode.F) == false)
         {
@@ -60,9 +61,10 @@ public class DimensionChanger : MonoBehaviour
     /// <summary>
     /// 対象の次元色を変更する。
     /// </summary>
-    private void DimensionChange(Player player)
+    protected void DimensionChange(Player player)
     {
         player.GetComponent<ColorSwitch>().SetDimensionColor(targetColor);
         player.GetComponent<LocalGravity>().SetGravityDirection(targetDirection);
+        soundEffect.PlaySound();
     }
 }
