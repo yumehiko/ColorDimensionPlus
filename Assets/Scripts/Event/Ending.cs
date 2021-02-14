@@ -2,30 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Cinemachine;
 
 /// <summary>
 /// エンディング用イベント。
 /// </summary>
 public class Ending : MonoBehaviour
 {
-    [SerializeField] private Camera mainCamera = default;
+    [SerializeField] private CinemachineVirtualCamera vCamera = default;
     [SerializeField] private Player player = default;
     [SerializeField] private CharaControl charaControl = default;
     [SerializeField] private InputManager inputManager = default;
     [SerializeField] private Animator animator = default;
+    [SerializeField] private SpriteRenderer targetIcon = default;
+    [SerializeField] private Animator iconAnimator = default;
     [SerializeField] private GameManager gameManager = default;
-    private bool isEndingStart = false;
 
 
-    private void Update()
-    {
-        if(isEndingStart == false)
-        {
-            return;
-        }
-
-        CameraChase();
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,22 +33,29 @@ public class Ending : MonoBehaviour
     /// </summary>
     private void EndingStart()
     {
-        isEndingStart = true;
-        inputManager.enabled = false;
-        player.LoseControl();
-        charaControl.InputHorizontal = 1.0f;
+        SetVirtualCamera();
+        ForceControl();
         animator.SetTrigger("StartEnding");
     }
 
     /// <summary>
+    /// 操作を禁止して右移動に固定。
+    /// </summary>
+    private void ForceControl()
+    {
+        inputManager.enabled = false;
+        targetIcon.enabled = false;
+        iconAnimator.enabled = false;
+        charaControl.InputHorizontal = 1.0f;
+    }
+
+
+    /// <summary>
     /// カメラがプレイヤーを追従。
     /// </summary>
-    private void CameraChase()
+    private void SetVirtualCamera()
     {
-        mainCamera.transform.position = new Vector3(
-            player.transform.position.x,
-            player.transform.position.y,
-            mainCamera.transform.position.z);
+        vCamera.Priority = 30;
     }
 
     /// <summary>
