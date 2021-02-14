@@ -40,9 +40,9 @@ public class Ending : MonoBehaviour
     /// </summary>
     private void EndingStart()
     {
-        Debug.Log("EndingStart");
         isEndingStart = true;
         inputManager.enabled = false;
+        player.LoseControl();
         charaControl.InputHorizontal = 1.0f;
         animator.SetTrigger("StartEnding");
     }
