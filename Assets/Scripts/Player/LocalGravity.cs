@@ -31,6 +31,11 @@ public class LocalGravity : MonoBehaviour
     /// </summary>
     private Vector3 gravity;
 
+    /// <summary>
+    /// 重力の記憶用変数。
+    /// </summary>
+    private Vector3 gravityHold;
+
     private void Start()
     {
         SetGravityDirection(gravityDirection);
@@ -64,10 +69,28 @@ public class LocalGravity : MonoBehaviour
             default:
                 throw new System.Exception("GravityParameterNotFound");
         }
+        gravityHold = gravity;
     }
 
     private void FixedUpdate()
     {
         myBody.AddForce(gravity);
+    }
+
+    /// <summary>
+    /// 重力を消す。
+    /// </summary>
+    public void ZeroGravity()
+    {
+        myBody.velocity = Vector2.zero;
+        gravity = Vector3.zero;
+    }
+
+    /// <summary>
+    /// 重力を戻す。
+    /// </summary>
+    public void ReturnGravity()
+    {
+        gravity = gravityHold;
     }
 }

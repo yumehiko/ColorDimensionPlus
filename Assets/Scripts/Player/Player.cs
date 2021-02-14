@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator iconAnimator = default;
     [SerializeField] private SoundEffect soundEffect = default;
     [SerializeField] private ColorSwitch colorSwitch = default;
+    [SerializeField] private OnGroundCheck onGroundCheck = default;
 
     /// <summary>
     /// 現在操作対象になっているか。
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
         iconAnimator.enabled = true;
         iconAnimator.Play("Start");
         IsControlActive = true;
+        onGroundCheck.OnGetControl();
         if (playSound)
         {
             soundEffect.PlaySoundRandomPitch(1.0f, 0.8f, 1.2f);
